@@ -159,17 +159,16 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
+    debug.sf.frame_rate_multiple_threshold=60 \
+    ro.surface_flinger.set_idle_timer_ms=400 \
+    ro.surface_flinger.set_touch_timer_ms=200 \
+    ro.surface_flinger.set_display_power_timer_ms=700 \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
     vendor.display.use_layer_ext=1 \
     vendor.display.defer_fps_frame_count=2
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.set_idle_timer_ms=4000 \
-    ro.surface_flinger.set_touch_timer_ms=4000 \
-    ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)

@@ -28,7 +28,7 @@
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">60</integer>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
