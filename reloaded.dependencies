@@ -1,0 +1,57 @@
+[
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/device_xiaomi_alioth",
+        "target_path":  "device/xiaomi/alioth",
+        "revision":     "A13"
+    },
+    {
+        "remote":       "aospa",
+        "repository":   "AOSPA/android_kernel_xiaomi_sm8250",
+        "target_path":  "kernel/xiaomi/sm8250",
+        "revision":     "topaz"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/vendor_xiaomi_alioth",
+        "target_path":  "vendor/xiaomi/alioth",
+        "revision":     "topaz",
+        "clone-depth":  "1"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "AOSPA/android_hardware_qcom_audio",
+        "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
+        "revision":     "topaz-865"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/android_hardware_qcom_sm8250_display",
+        "target_path":  "hardware/qcom/sm8250/display",
+        "revision":     "topaz-865"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/android_hardware_qcom_sm8250_gps",
+        "target_path":  "hardware/qcom/sm8250/gps",
+        "revision":     "topaz-865"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/android_hardware_qcom_sm8250_media",
+        "target_path":  "hardware/qcom/sm8250/media",
+        "revision":     "topaz-865"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/android_vendor_nxp_opensource_halimpl",
+        "target_path":  "vendor/nxp/opensource/halimpl",
+        "revision":     "topaz-SN100X-legacy"
+    },
+    {
+        "remote":       "ReloadedOS-caf",
+        "repository":   "ReloadedOS-caf/android_vendor_nxp_opensource_halimpl",
+        "target_path":  "vendor/nxp/opensource/hidlimpl",
+        "revision":     "topaz-SN100X-legacy"
+    }
+]

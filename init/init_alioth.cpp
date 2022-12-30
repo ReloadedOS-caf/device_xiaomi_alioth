@@ -59,7 +59,7 @@ void load_poco_f3() {
     property_override("ro.product.brand", "POCO");
     property_override("ro.product.device", "alioth");
     property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.model", "M2012K11AG");
+    property_override("ro.product.model", "Poco F3");
     property_override("ro.product.name", "alioth");
 }
 
