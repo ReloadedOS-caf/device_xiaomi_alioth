@@ -41,10 +41,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
-TARGET_BOARD_SUFFIX := _64
-TARGET_USES_64_BIT_BINDER := true
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
-
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -118,14 +114,10 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_alioth
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
-    androidboot.fstab_suffix=qcom \
     androidboot.init_fatal_reboot_target=recovery \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
